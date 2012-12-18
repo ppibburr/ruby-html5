@@ -4,7 +4,7 @@ module RubyJS
   class Config
     # path to included resources
     def self.path
-      "#{file://File.expand_path(File.dirname(__FILE__))}"
+      "file://#{File.expand_path(File.dirname(__FILE__))}"
     end
   end
   
