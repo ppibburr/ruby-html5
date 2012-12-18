@@ -9,7 +9,7 @@ Brings HTML5  ala WebKit to Ruby, ties in various libraries and provides some sy
 *  [gir_ffi-webkit](https://github.com/ppibburr/gir_ffi-webkit)
 *  [ffi-webkit-js](https://github.com/ppibburr/ffi-webkit-js)
 *  [ffi-webkit-dom](https://github.com/ppibburr/ffi-webkit-dom)
-*  [gir_ffi-sugar](https://github.com/ppibburr/gir_ffi-sugar)
+*  [gir_ffi-sugar](https://github.com/ppibburr/GirFFISugar)
 
 EXAMPLE
 ===
