@@ -28,6 +28,9 @@
 require 'ffi-webkit-js' 
 require 'webkit-dom'
 require "gir_ffi-sugar"
+GirFFISugar.sugar(:GLib)
+GirFFISugar.sugar(:GObject)
+GirFFISugar.sugar(:Gtk)
 require File.join(File.dirname(__FILE__),'html5','app.rb')
 __END__
                                    FFI

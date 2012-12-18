@@ -32,7 +32,7 @@ module GObject
     end
   
     class << self
-      alias _wrap wrap
+      alias :_wrap :wrap
     end
   
     # Maintains|Appends|Modifies a store of addresses and object_id's

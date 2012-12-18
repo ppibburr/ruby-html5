@@ -1,4 +1,5 @@
-require File.join(File.dirname(__FILE__),'helpers/gir_ffi/subclass_normalize')
+#require File.join(File.dirname(__FILE__),'helpers/gir_ffi/subclass_normalize')
+if __FILE__ != $0
 
 module RubyJS
   class Config
@@ -367,8 +368,8 @@ module RubyJS
     end
   end
 end
-
-if __FILE__ == $0
+else
+  require File.join(File.dirname(__FILE__),"..","html5.rb")
   class MyApp < RubyJS::App; 
     def button_clicked this
       shells[0].views[0].alert this
