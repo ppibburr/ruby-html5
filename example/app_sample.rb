@@ -7,6 +7,7 @@ class MyApp < RubyJS::App;
   end
 end
 
+#calls tween from XUI.js
 def loop_bounce collection
   collection.tween(:left=>'200px',:backgroundColor=>"#F80303",:top=>"200px",:duration=>750) do
     collection.tween(:backgroundColor=>"#cecece",:top=>"0px",:duration=>750) do
@@ -22,6 +23,9 @@ end
 MyApp.run do 
   shell.resize 400,400
   
+  # pre render html modification
+  # at a larger scale, would see performance gains
+  # versus all in 'on_ready()'  
   view.html.body.replace do
     div(:class=>'button',:id=>'b1') do
       on :click, :button_clicked,'this'
