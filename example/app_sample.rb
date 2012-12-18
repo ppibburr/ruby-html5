@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'ruby-html5'
+require 'html5'
 
 class MyApp < RubyJS::App; 
   def button_clicked this

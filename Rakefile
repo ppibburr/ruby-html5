@@ -18,7 +18,7 @@ end
 
 namespace :gem do
   task :build do
-  	sh %{gem build ffi-webkit-dom.gemspec}
+  	sh %{gem build ruby-html5.gemspec}
   end
 end
 
